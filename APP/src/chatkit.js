@@ -2,7 +2,7 @@ import Chatkit from '@pusher/chatkit'
 
 const credentials = {
   url: (id, token) =>
-    `https://volcano-chat.herokuapp.com/token?user=${id}&token=${token}`,
+    `https://chatkit-demo-server.herokuapp.com/token?user=${id}&token=${token}`,
   instanceLocator: 'v1:us1:05f46048-3763-4482-9cfe-51ff327c3f29',
 }
 
