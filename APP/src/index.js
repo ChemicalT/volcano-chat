@@ -199,7 +199,7 @@ class View extends React.Component {
     'Notification' in window && Notification.requestPermission()
     existingUser
       ? ChatManager(this, JSON.parse(existingUser))
-      : fetch('https://volcano-chat.herokuapp.com/auth', {
+      : fetch('https://chatkit-demo-server.herokuapp.com/auth', {
           method: 'POST',
           body: JSON.stringify({ code: authCode }),
         })
